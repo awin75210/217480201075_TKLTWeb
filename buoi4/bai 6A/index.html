@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="nhập năm sinh của bạn" id="namsinh"  ><br>
+
+    <input type="button" name="btntuoi" onclick="tinhtuoi()" value="tính tuổi" >
+    
+    <script lang="JavaScript">
+        var year = new Date()
+        var namht = year.getFullYear()
+        function tinhtuoi(){
+            
+            var namsinh = document.getElementById("namsinh").value 
+            var tuoi = namht - namsinh ;
+            alert("tuổi của bạn là: " +  tuoi);
+        }
+
+    </script>
+    
+</body>
+</html>

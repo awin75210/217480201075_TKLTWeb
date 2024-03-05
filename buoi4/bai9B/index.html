@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="danhsach" placeholder="nhập số lượng danh sách" id="slds">
+    <input type="button" value="nhập" onclick="ds()">
+
+    <script lang="JavaScript">
+        var sl, x;
+        function ds(){
+            var ds = new Array(100);
+            sl = document.getElementById("slds").value;
+            
+            for (i = 0; i < sl; i++) {
+              ds[i] = prompt("Thiết bị thứ " + (i + 1) + ":");
+            }
+            
+            document.write("<h1>Danh sách các thiết bị văn phòng là:</h1>");
+            document.write("<table border='1px solid'>");
+            document.write("<tr><th>STT</th><th>Thiết bị</th></tr>");
+            
+            for (x in ds) {
+              document.write("<tr><td>" + (parseInt(x) + 1) + "</td><td>" + ds[x] + "</td></tr>");
+            }
+            
+            document.write("</table>");
+
+        }
+    </script>
+</body>
+</html>
