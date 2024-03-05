@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input onclick="hoten()" type="button" name="hoten" value="Họ Tên"><br>
+    <input onclick="donvi()" type="button" name="donvi" value="Đơn vị"><br>
+    <input type="text" name="txthoten" value="Chào" id="hoten"> <br>
+    <input type="text" name="txtdonvi" value="Đơn vị" id="donvi">
+    <script lang="JavaScript">
+        function hoten(){
+            var hoten = document.getElementById("hoten").value 
+            alert(hoten)
+        }
+        function donvi(){
+            var donvi = document.getElementById('donvi').value
+            alert(donvi)
+        }
+
+    </script>
+</body>
+</html>
